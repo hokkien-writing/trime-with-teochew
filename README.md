@@ -56,7 +56,7 @@ unzip rimerc-trime-v0.1.7.zip
 
 # download your schema
 git clone --depth 1 "$SHEMA_URL"
-cp rime-teochew/*.yaml trime
+cp "$SCHEMA_NAME/*.yaml" trime
 cp -rf trime/* "$TRIME_DIR/app/src/main/assets/rime"
 ```
 
