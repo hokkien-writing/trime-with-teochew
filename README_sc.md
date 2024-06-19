@@ -40,25 +40,35 @@ git submodule update --init --recursive
 ### 整合配置
 
 ```bash
-# 请将下面的配置换成自己的
+# 請掠下底配置換成家己其
 TRIME_DIR=~/Desktop/trime/
 SCHEMA_NAME=rime-teochew
 SCHEMA_URL=https://github.com/hokkien-writing/rime-teochew.git
 
-# 创建工作目录
-rm -rf "workdir/$SCHEMA_NAME"
-mkdir -p "workdir/$SCHEMA_NAME"
+# 創建工作文件夾
+rm -rf "workdir/trime"
+mkdir -p "workdir/trime"
 cd workdir || return
 
-# 下载并解压 rimerc-trime
+# 下載並解壓 rimerc-trime
+mkdir rimerc-trime
 curl -LO https://github.com/Bambooin/rimerc/releases/download/v0.1.7/rimerc-trime-v0.1.7.zip
-unzip rimerc-trime-v0.1.7.zip
+unzip rimerc-trime-v0.1.7.zip -d rimerc-trime
+find rimerc-trime/trime/* -type f ! -name "luna*" -exec cp {} trime \;
 
-# 下载打字方案并复制到trime目录
+# 下載朙月拼音
+git clone https://github.com/rime/rime-luna-pinyin.git
+cp rime-luna-pinyin/*.yaml trime
+
+# 下載五筆畫
+git clone https://github.com/rime/rime-stroke.git
+cp rime-stroke/*.yaml trime
+
+# 下載拍字方案並複製到trime文件夾
 git clone --depth 1 "$SCHEMA_URL"
-cp "$SCHEMA_NAME/*.yaml" trime
+cp "$SCHEMA_NAME"/*.yaml trime
 
-# 复制所有配置文件到 TRIME_DIR
+# 複製所有配置文件到 TRIME_DIR
 cp -rf trime/* "$TRIME_DIR/app/src/main/assets/rime"
 ```
 
