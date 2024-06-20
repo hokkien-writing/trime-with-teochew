@@ -4,6 +4,8 @@
 
 潮語文 | [简体中文](README_sc.md)
 
+> 📌 本文採用漢字佮潮州白話字寫成，請參考[簡明潮州白話字](https://hokkien-writing.github.io/simple_puj/)。
+
 ## 源起
 
 以先，我介紹過做呢在 iPhone手機上用潮州話拍字。後來，收着一些讀者反饋，其中有部分讀者希望在 Android手機上也能安裝即用潮州話拍字。
