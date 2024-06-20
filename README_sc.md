@@ -18,6 +18,9 @@
 
 现在大家舒服了，只要在 [腾讯微云](https://share.weiyun.com/yxVJfsN7) 、 [微软云盘](https://1drv.ms/f/s!AgqX3Jd3VLa4gS3ujqPC7hpY4lKt?e=Wc8xvk)  或者 [GitHub Release](https://github.com/hokkien-writing/trime-with-teochew/releases) 下载同文输入法潮州话定制版，然后按照下底视频方式安装即用。
 
+> <img src="assets/微信視頻號-不輟集.jpeg" height="250"><br/>
+> 微信视频号《不輟集》
+
 ## 打包
 
 如果你想要自己打包，添加新的打字方案或使用更新版本的同文输入法，可按照我下面的方式来操作。
